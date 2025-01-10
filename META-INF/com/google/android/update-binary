@@ -1,0 +1,12 @@
+ui_print("***************************************");
+ui_print("* Standalone Pixel Launcher Installer *");
+ui_print("***************************************");
+ui_print("For Android 15");
+ui_print("");
+
+ui_print("Mounting system...");
+if run_program("/sbin/busybox", "mount", "/system"); then
+ui_print("Done!");
+else
+error "Error while mounting system."
+fi
