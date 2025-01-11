@@ -1,10 +1,10 @@
 # Standalone Pixel Launcher Installer
-### Pixel Launcher, as a standalone installer zip with all its core dependencies. That's it.
+### Pixel Launcher, as a standalone installer zip with all its core dependencies. That's it. (This is NOT an official Google product, it's distributed with ABSOLUTELY NO WARRANTY!)
 ### I'M NOT HAVING ANY RESPONSIBILITY, USE AT YOUR OWN RISK!
 (Tested on LineageOS 22.1 with MindTheGapps)
 
 ## Does it delete the OG launcher of your ROM?
-No.
+No. But it may (if a problem arises)
 
 ## How can I pack myself?
 ### Requirements: a Linux environment with access to git, basic archiving commands (tar, zip etc.) and wget. That's it.
