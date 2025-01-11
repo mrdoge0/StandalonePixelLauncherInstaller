@@ -32,17 +32,17 @@ package_extract_file("system/product/system/etc/textclassifier/actions_suggestio
 package_extract_file("system/product/system/etc/textclassifier/lang_id.model", "/system/product/system/etc/textclassifier/lang_id.model");
 package_extract_file("system/product/system/etc/textclassifier/textclassifier.en.model", "/system/product/system/etc/textclassifier/textclassifier.en.model");
 package_extract_file("system/product/system/etc/textclassifier/textclassifier.universal.model", "/system/product/system/etc/textclassifier/textclassifier.universal.model");
-package_extract_file("system/system_ext/etc/permissions/com.android.systemui.plugin.globalactions.wallet.xml", "system/system_ext/etc/permissions/com.android.systemui.plugin.globalactions.wallet.xml");
-package_extract_file("system/system_ext/etc/permissions/com.google.android.apps.nexuslauncher.xml", "system/system_ext/etc/permissions/com.google.android.apps.nexuslauncher.xml");
-package_extract_file("system/system_ext/etc/permissions/com.google.android.apps.wallpaper.xml", "system/system_ext/etc/permissions/com.google.android.apps.wallpaper.xml");
-package_extract_file("system/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml", "system/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml");
-package_extract_file("system/system_ext/etc/sysconfig/hiddenapi-whitelist-com.google.android.apps.nexuslauncher.xml", "system/system_ext/etc/sysconfig/hiddenapi-whitelist-com.google.android.apps.nexuslauncher.xml");
-package_extract_file("system/system_ext/etc/sysconfig/preinstalled-packages-platform-overlays.xml", "system/system_ext/etc/sysconfig/preinstalled-packages-platform-overlays.xml");
-package_extract_file("system/system_ext/overlay/GoogleWallpaperOverlay.apk", "system/system_ext/overlay/GoogleWallpaperOverlay.apk");
-package_extract_file("system/system_ext/overlay/PixelLauncherOverlay.apk", "system/system_ext/overlay/PixelLauncherOverlay.apk");
-package_extract_dir("system/system_ext/priv-app/NexusLauncherRelease", "system/system_ext/priv-app/NexusLauncherRelease"); # The actual Pixel Launcher
-package_extract_dir("system/system_ext/priv-app/QuickAccessWallet", "system/system_ext/priv-app/QuickAccessWallet");
-package_extract_dir("system/system_ext/priv-app/WallpaperPickerGoogleRelease", "system/system_ext/priv-app/WallpaperPickerGoogleRelease");
+package_extract_file("system/system_ext/etc/permissions/com.android.systemui.plugin.globalactions.wallet.xml", "/system/system_ext/etc/permissions/com.android.systemui.plugin.globalactions.wallet.xml");
+package_extract_file("system/system_ext/etc/permissions/com.google.android.apps.nexuslauncher.xml", "/system/system_ext/etc/permissions/com.google.android.apps.nexuslauncher.xml");
+package_extract_file("system/system_ext/etc/permissions/com.google.android.apps.wallpaper.xml", "/system/system_ext/etc/permissions/com.google.android.apps.wallpaper.xml");
+package_extract_file("system/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml", "/system/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml");
+package_extract_file("system/system_ext/etc/sysconfig/hiddenapi-whitelist-com.google.android.apps.nexuslauncher.xml", "/system/system_ext/etc/sysconfig/hiddenapi-whitelist-com.google.android.apps.nexuslauncher.xml");
+package_extract_file("system/system_ext/etc/sysconfig/preinstalled-packages-platform-overlays.xml", "/system/system_ext/etc/sysconfig/preinstalled-packages-platform-overlays.xml");
+package_extract_file("system/system_ext/overlay/GoogleWallpaperOverlay.apk", "/system/system_ext/overlay/GoogleWallpaperOverlay.apk");
+package_extract_file("system/system_ext/overlay/PixelLauncherOverlay.apk", "/system/system_ext/overlay/PixelLauncherOverlay.apk");
+package_extract_dir("system/system_ext/priv-app/NexusLauncherRelease", "/system/system_ext/priv-app/NexusLauncherRelease"); # The actual Pixel Launcher
+package_extract_dir("system/system_ext/priv-app/QuickAccessWallet", "/system/system_ext/priv-app/QuickAccessWallet");
+package_extract_dir("system/system_ext/priv-app/WallpaperPickerGoogleRelease", "/system/system_ext/priv-app/WallpaperPickerGoogleRelease");
 ui_print("Done!");
 ui_print("");
 
