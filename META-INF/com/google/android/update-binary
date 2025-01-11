@@ -13,3 +13,46 @@ error "Error while mounting system."
 fi
 
 ui_print("Extracting files...");
+package_extract_dir("system/product/app/PixelThemesStub", "/system/product/app/PixelThemesStub");
+package_extract_dir("system/product/app/PixelThemesStub2022_and_newer", "/system/product/app/PixelThemesStub2022_and_newer");
+package_extract_dir("system/product/app/WallpaperEmojiPrebuilt", "/system/product/app/WallpaperEmojiPrebuilt");
+package_extract_file("system/product/etc/permissions/com.google.android.aicore.xml", "/system/product/etc/permissions/com.google.android.aicore.xml");
+package_extract_file("system/product/etc/permissions/com.google.android.apps.weather.xml", "/system/product/etc/permissions/com.google.android.apps.weather.xml");
+package_extract_file("system/product/etc/permissions/com.google.android.as.oss.xml", "/system/product/etc/permissions/com.google.android.as.oss.xml");
+package_extract_file("system/product/etc/permissions/com.google.android.as.xml", "/system/product/etc/permissions/com.google.android.as.xml");
+package_extract_file("system/product/etc/permissions/com.google.android.settings.intelligence.xml", "/system/product/etc/permissions/com.google.android.settings.intelligence.xml");
+package_extract_dir("system/product/overlay/DevicePersonalizationServicesOverlay.apk", "/system/product/overlay/DevicePersonalizationServicesOverlay.apk");
+package_extract_dir("system/product/overlay/SettingsServicesOverlay.apk", "/system/product/overlay/SettingsServicesOverlay.apk");
+package_extract_dir("system/product/priv-app/AICorePrebuilt-aicore_20240509.01_RC02", "/system/product/priv-app/AICorePrebuilt-aicore_20240509.01_RC02");
+package_extract_dir("system/product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02", "/system/product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02");
+package_extract_dir("system/product/priv-app/DevicePersonalizationPrebuiltPixel2024-aiai_20240329.00_RC16", "/system/product/priv-app/DevicePersonalizationPrebuiltPixel2024-aiai_20240329.00_RC16");
+package_extract_dir("system/product/priv-app/SettingsIntelligenceGooglePrebuilt", "/system/product/priv-app/SettingsIntelligenceGooglePrebuilt");
+package_extract_dir("system/product/priv-app/WeatherPixelPrebuilt_24D1", "/system/product/priv-app/WeatherPixelPrebuilt_24D1");
+package_extract_file("system/product/system/etc/textclassifier/actions_suggestions.universal.model", "/system/product/system/etc/textclassifier/actions_suggestions.universal.model");
+package_extract_file("system/product/system/etc/textclassifier/lang_id.model", "/system/product/system/etc/textclassifier/lang_id.model");
+package_extract_file("system/product/system/etc/textclassifier/textclassifier.en.model", "/system/product/system/etc/textclassifier/textclassifier.en.model");
+package_extract_file("system/product/system/etc/textclassifier/textclassifier.universal.model", "/system/product/system/etc/textclassifier/textclassifier.universal.model");
+package_extract_file("system/system_ext/etc/permissions/com.android.systemui.plugin.globalactions.wallet.xml", "system/system_ext/etc/permissions/com.android.systemui.plugin.globalactions.wallet.xml");
+package_extract_file("system/system_ext/etc/permissions/com.google.android.apps.nexuslauncher.xml", "system/system_ext/etc/permissions/com.google.android.apps.nexuslauncher.xml");
+package_extract_file("system/system_ext/etc/permissions/com.google.android.apps.wallpaper.xml", "system/system_ext/etc/permissions/com.google.android.apps.wallpaper.xml");
+package_extract_file("system/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml", "system/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml");
+package_extract_file("system/system_ext/etc/sysconfig/hiddenapi-whitelist-com.google.android.apps.nexuslauncher.xml", "system/system_ext/etc/sysconfig/hiddenapi-whitelist-com.google.android.apps.nexuslauncher.xml");
+package_extract_file("system/system_ext/etc/sysconfig/preinstalled-packages-platform-overlays.xml", "system/system_ext/etc/sysconfig/preinstalled-packages-platform-overlays.xml");
+package_extract_file("system/system_ext/overlay/GoogleWallpaperOverlay.apk", "system/system_ext/overlay/GoogleWallpaperOverlay.apk");
+package_extract_file("system/system_ext/overlay/PixelLauncherOverlay.apk", "system/system_ext/overlay/PixelLauncherOverlay.apk");
+package_extract_dir("system/system_ext/priv-app/NexusLauncherRelease", "system/system_ext/priv-app/NexusLauncherRelease"); # The actual Pixel Launcher
+package_extract_dir("system/system_ext/priv-app/QuickAccessWallet", "system/system_ext/priv-app/QuickAccessWallet");
+package_extract_dir("system/system_ext/priv-app/WallpaperPickerGoogleRelease", "system/system_ext/priv-app/WallpaperPickerGoogleRelease");
+ui_print("Done!");
+ui_print("");
+
+ui_print("Unmounting system...");
+ui_print("Mounting system...");
+if unmount("/system"); then
+ui_print("Done!");
+ui_print("");
+else
+error "Error while unmounting system."
+fi
+
+ui_print("Installation done! Don't forget to wipe cache.");
